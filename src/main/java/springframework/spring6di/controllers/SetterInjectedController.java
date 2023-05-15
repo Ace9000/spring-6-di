@@ -13,7 +13,7 @@ public class SetterInjectedController {
     @Qualifier("setterGreetingBean")
     @Autowired
     public void setGreetingService(GreetingService greetingService) {
-        this.greetingService = greetingService;
+        System.out.println("SetterInjectedController.setGreetingService");
     }
 
     public String sayHello() {
